@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(){
+   int a, b;
+   printf("Choose your operation :- \n1:- Addition\n2. Subtraction\n3.Multiplication\n4.Divisoin");
+   int n;
+   scanf("%d", &n);
+   printf("Enter two numbers : ");
+   scanf("%d%d", &a, &b);
+   switch(n){
+    case 1:
+        printf("Summation of numbers is %d", a+b);
+        break;
+        
