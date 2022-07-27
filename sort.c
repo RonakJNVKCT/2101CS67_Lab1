@@ -13,7 +13,21 @@ void selection_sort(int array[], int n){
       printf("%d  ", array[i]);
     }
 }
-        
+void bubble_sort(int array[], int n){
+  int i, j;
+  for(int i = 0;i<n-1;i++){
+    for(int j = 0;j<n-i-1;j++){
+      if(array[j]>array[j+1]){
+        int temp = array[j];
+        array[j] = array[j+1];
+        array[j+1] = temp;
+      }
+    }
+  }
+  for(int i = 0;i<n;i++){
+    printf("%d  ", array[i]);
+    }
+}
 int main(){
   printf("This is a programme to sort an array using various methods");
   int n;
@@ -23,4 +37,6 @@ int main(){
   for(int i = 0;i<n;i++){
     scanf("%d", &numbers[i]);
   }
+  return 0;
+}
  
