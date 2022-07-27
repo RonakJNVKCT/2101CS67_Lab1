@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(){
    int a, b;
-   printf("Choose your operation :- \n1:- Addition\n2. Subtraction\n3.Multiplication\n4.Divisoin");
+   printf("Choose your operation :- \n1:- Addition\n2. Subtraction\n3.Multiplication\n4.Divisoin\n");
    int n;
    scanf("%d", &n);
    printf("Enter two numbers : ");
