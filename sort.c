@@ -28,6 +28,22 @@ void bubble_sort(int array[], int n){
     printf("%d  ", array[i]);
     }
 }
+void insertion_sort(int array[], int n){
+  int i, key, j;
+  for(i = 1;i<n;i++){
+    key = array[i];
+    j = i-1;
+    while(j>=0 && array[j]>key){
+      array[j+1] = array[j];
+      j = j-1;
+    }
+    array[j+1] = key;
+  }
+  for(int i = 0;i<n;i++){
+    printf("%d  ", array[i]);
+  }
+}
+
 int main(){
   printf("This is a programme to sort an array using various methods");
   int n;
