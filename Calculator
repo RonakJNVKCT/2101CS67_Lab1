@@ -10,4 +10,7 @@ int main(){
     case 1:
         printf("Summation of numbers is %d", a+b);
         break;
-        
+    case 2:
+         printf("Difference of numbers is %d", a-b);
+         break;
+         
